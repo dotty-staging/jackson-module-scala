@@ -10,6 +10,7 @@ ThisBuild / scalaVersion := "2.13.6"
 ThisBuild / crossScalaVersions := Seq("2.11.12", "2.12.14", "2.13.6", "3.0.1")
 
 resolvers += Resolver.sonatypeRepo("snapshots")
+resolvers += "Sonatype s01 Snapshots" at "https://s01.oss.sonatype.org/content/repositories/snapshots"
 
 val scalaReleaseVersion = SettingKey[Int]("scalaReleaseVersion")
 scalaReleaseVersion := {
